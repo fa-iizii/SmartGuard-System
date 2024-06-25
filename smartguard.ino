@@ -65,7 +65,7 @@ DHT dht(DHTPIN, DHTTYPE);
 // Create a Blynk timer object
 BlynkTimer timer;
 
-// Function to send sensor data for pharmacy monitoring
+// Function to send sensor data 
 void sendPharmacySensorData() {
   // Read temperature and humidity from the DHT sensor
   float h = dht.readHumidity();
