@@ -224,6 +224,12 @@ void loop() {
 ```
 For more details, please refer to the full code in the repository.
 
+### Images for Reference:
+
+![SmartGuard Fritzing Sketch](images/SmartGuard-System_Fritzing_Sketch.png)
+![SmartGuard Hardware Setup](images/smartguard-system_setup-hardware.jpg)
+
+
 ### Notes:
 
 - Replace `smartguard.ino` with the actual name of your Arduino sketch file.
