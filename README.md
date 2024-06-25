@@ -209,7 +209,7 @@ void setup() {
   // Connect to Blynk using the combined Blynk token, SSID, and password
   Blynk.begin(BLYNK_AUTH_TOKEN, ssid, pass);
   dht.begin();
-  timer.setInterval(2500L, sendPharmacySensorData);
+  timer.setInterval(2500L, sendSensorData);
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
   }
@@ -219,6 +219,7 @@ void loop() {
   timer.run();
   measureUltrasonicDistance();
   }
+
 
 ```
 For more details, please refer to the full code in the repository.
