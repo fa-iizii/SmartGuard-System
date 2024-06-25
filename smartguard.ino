@@ -1,5 +1,4 @@
 //SmartGuard-System 
-//(c) faiizii
 /*
   SmartGuard: Integrated Intruder Detection and Environmental Monitoring System
 
@@ -65,8 +64,8 @@ DHT dht(DHTPIN, DHTTYPE);
 // Create a Blynk timer object
 BlynkTimer timer;
 
-// Function to send sensor data 
-void sendPharmacySensorData() {
+// Function to send sensor data monitoring temperature and humidity from the DHT sensor
+void sendSensorData() {
   // Read temperature and humidity from the DHT sensor
   float h = dht.readHumidity();
   float t = dht.readTemperature(); // or dht.readTemperature(true) for Fahrenheit
@@ -149,7 +148,7 @@ void setup() {
   // Connect to Blynk using the combined Blynk token, SSID, and password
   Blynk.begin(BLYNK_AUTH_TOKEN, ssid, pass);
   dht.begin();
-  timer.setInterval(2500L, sendPharmacySensorData);
+  timer.setInterval(2500L, sendSensorData);
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
   }
@@ -159,3 +158,6 @@ void loop() {
   timer.run();
   measureUltrasonicDistance();
   }
+
+//SmartGuard-System 
+//(c) faiizii
