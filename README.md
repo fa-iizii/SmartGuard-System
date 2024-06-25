@@ -35,7 +35,7 @@ Before you begin, ensure you have the following:
 ### Steps
 
 1. **Download the Code**:
-   - Copy the code from `smartguard.ino` in this repository.
+   - Copy the code from [`smartguard.ino`](smartguard.ino) in this repository.
 
 2. **Open Arduino IDE**:
    - Launch the Arduino IDE on your computer.
@@ -77,7 +77,7 @@ The main functionality of the code is divided into several functions:
 - **`setup`**: Initializes the ESP8266, connects to Wi-Fi, and sets up the sensors and Blynk timer.
 - **`loop`**: Runs the Blynk and timer functions continuously to keep the system operational.
 
-## Sample Code
+## Sample Code 
 
 ```cpp
 //SmartGuard-System 
@@ -222,17 +222,23 @@ void loop() {
 
 
 ```
-For more details, please refer to the full code in the repository.
+For more details, please refer to the full code in the repository. [Complete Code](smartguard.ino)
 
 ### Images for Reference:
 
 ![SmartGuard Fritzing Sketch](images/SmartGuard-System_Fritzing_Sketch.png)
+
+
 ![SmartGuard Hardware Setup](images/smartguard-system_setup-hardware.jpg)
 
 
+### More Images for Reference:
+
+- More images can be found in the [images folder](images/) in this repository.
+
 ### Notes:
 
-- Replace `smartguard.ino` with the actual name of your Arduino sketch file.
+- Replace ['smartguard.ino'](smartguard.ino) with the actual name of your Arduino sketch file.
 - Ensure the Markdown formatting is correct, especially with code blocks and lists.
 - Customize the Wi-Fi credentials and other configurations as per your setup.
 - Mention any specific details or instructions relevant to your project in the appropriate sections of the `README.md` file.
