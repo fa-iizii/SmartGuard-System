@@ -72,7 +72,7 @@ Before you begin, ensure you have the following:
 
 The main functionality of the code is divided into several functions:
 
-- **`sendPharmacySensorData`**: Reads temperature and humidity from the DHT11 sensor and sends the data to the Blynk app. Triggers a temperature alert if the temperature exceeds 20°C.
+- **`sendSensorData`**: Reads temperature and humidity from the DHT11 sensor and sends the data to the Blynk app. Triggers a temperature alert if the temperature exceeds 20°C.
 - **`measureUltrasonicDistance`**: Measures the distance using the HC-SR04 ultrasonic sensor. Sends the distance data to the Blynk app and triggers an intruder alert if an intruder is detected.
 - **`setup`**: Initializes the ESP8266, connects to Wi-Fi, and sets up the sensors and Blynk timer.
 - **`loop`**: Runs the Blynk and timer functions continuously to keep the system operational.
@@ -126,7 +126,7 @@ DHT dht(DHTPIN, DHTTYPE);
 BlynkTimer timer;
 
 // Function to send sensor data for pharmacy monitoring
-void sendPharmacySensorData() {
+void sendSensorData() {
   // Read temperature and humidity from the DHT sensor
   float h = dht.readHumidity();
   float t = dht.readTemperature(); // or dht.readTemperature(true) for Fahrenheit
